@@ -1,0 +1,63 @@
+{
+    "meta": {
+        "title": "Little Picks | Trusted baby & kids products in one place",
+        "description": "Browse baby skincare, nutrition, feeding essentials and oral care, then buy straight from each brand's own website."
+    },
+    "common": {
+        "skipToContent": "Skip to content"
+    },
+    "brand": {
+        "name": "Little Picks",
+        "logoLabel": "Little Picks, home"
+    },
+    "header": {
+        "navLabel": "Product categories"
+    },
+    "language": {
+        "switch": "Language",
+        "en": "EN",
+        "ar": "عربي"
+    },
+    "hero": {
+        "eyebrow": "Trusted baby & kids essentials",
+        "title": "Everything for your little one, picked in one place",
+        "subtitle": "Browse trusted baby and kids products by category, then head straight to the brand to buy.",
+        "ctaPrimary": "Browse categories",
+        "ctaSecondary": "How it works",
+        "factCategories": "4 categories",
+        "factBrands": "Trusted brands",
+        "factDirect": "Buy on the brand's own site",
+        "visualLabel": "Examples from each category"
+    },
+    "categories": {
+        "heading": "Browse by category",
+        "subheading": "Pick a category to jump to its products.",
+        "viewAll": "View all",
+        "viewAllLabel": "View all {name}",
+        "productsIn": "Products in {name}"
+    },
+    "product": {
+        "buy": "Buy on brand site",
+        "buyLabel": "Buy on brand site: {name} (opens in a new tab)",
+        "featured": "Featured"
+    },
+    "trust": {
+        "title": "How it works",
+        "curatedTitle": "Curated in one place",
+        "curatedBody": "Skincare, food, feeding and oral care, sorted so you don't search shop by shop.",
+        "directTitle": "Go straight to the brand",
+        "directBody": "Every button opens the brand's own website, where you buy.",
+        "bilingualTitle": "Arabic & English",
+        "bilingualBody": "Switch language any time and stay on the same page."
+    },
+    "footer": {
+        "description": "A small directory of children's products, grouped by category.",
+        "disclosure": "Disclosure: some links may be affiliate links.",
+        "copyright": "© {year} {name}. All rights reserved."
+    },
+    "notFound": {
+        "title": "Page not found",
+        "body": "The page you're looking for doesn't exist or has moved.",
+        "backHome": "Back to home"
+    }
+}

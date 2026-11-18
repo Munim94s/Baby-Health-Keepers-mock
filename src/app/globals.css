@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+/* Design tokens. "static" so the per-category tone classes below can reference them. */
+@theme static {
+  --color-canvas: #fff9f3;
+  --color-surface: #ffffff;
+  --color-ink: #2b2a33;
+  --color-muted: #5b5866;
+
+  --color-primary: #c9432e;
+  --color-primary-hover: #ab3321;
+  --color-primary-soft: #ffe3db;
+
+  --color-rose-soft: #ffe1e8;
+  --color-rose-strong: #b4233f;
+  --color-amber-soft: #ffefc7;
+  --color-amber-strong: #8a5300;
+  --color-sky-soft: #dceffc;
+  --color-sky-strong: #1b5e9b;
+  --color-mint-soft: #d8f3e6;
+  --color-mint-strong: #17694a;
+
+  --shadow-card: 0 12px 32px -14px rgb(43 42 51 / 0.22);
+  --shadow-float: 0 18px 40px -16px rgb(43 42 51 / 0.28);
+
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+/* Per-category accent. Used as bg-(--a-soft) / text-(--a-strong). */
+.tone-rose {
+  --a-soft: var(--color-rose-soft);
+  --a-strong: var(--color-rose-strong);
+}
+
+.tone-amber {
+  --a-soft: var(--color-amber-soft);
+  --a-strong: var(--color-amber-strong);
+}
+
+.tone-sky {
+  --a-soft: var(--color-sky-soft);
+  --a-strong: var(--color-sky-strong);
+}
+
+.tone-mint {
+  --a-soft: var(--color-mint-soft);
+  --a-strong: var(--color-mint-strong);
+}
+
+@utility container-page {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 72rem;
+  padding-inline: 1.25rem;
+
+  @media (min-width: 40rem) {
+    padding-inline: 2rem;
+  }
+}
+
+html {
+  scroll-padding-top: 9rem;
+}
+
+@media (min-width: 48rem) {
+  html {
+    scroll-padding-top: 6rem;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
